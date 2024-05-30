@@ -9,7 +9,7 @@
     "gcp-build": "node index.js"
   },
   "engines": {
-    "node": "20.x"
+    "node": "17.x"
   },
   "author": "",
   "license": "ISC",
