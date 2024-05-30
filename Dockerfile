@@ -1,7 +1,7 @@
 
 # Use the official lightweight Node.js image.
 # https://hub.docker.com/_/node
-FROM node:latest
+FROM node:20.14.0-slim
 # Create and change to the app directory.
 WORKDIR /usr/src/app
 
@@ -25,4 +25,5 @@ COPY . ./
 
 EXPOSE 8080
 # Run the web service on container startup.
-CMD [ "npm", "start" ]
+CMD ["cd", "/usr/src/app"]
+ENTRYPOINT ["npm", "run", "start"]
