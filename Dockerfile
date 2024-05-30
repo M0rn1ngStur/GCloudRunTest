@@ -23,4 +23,4 @@ RUN npm ci
 COPY . ./
 
 # Run the web service on container startup.
-CMD [ "npm", "run", "start" ]
+CMD [ "node", "index.js" ]
