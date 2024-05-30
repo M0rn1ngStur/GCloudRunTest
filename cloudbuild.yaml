@@ -16,7 +16,6 @@ steps:
           - "gcr.io/$PROJECT_ID/gcloudruntest:$COMMIT_SHA"
           - "--region"
           - "europe-central2"
-          - "--set-build-env-var='GOOGLE_NODE_RUN_SCRIPTS='"
 options:
   logging: CLOUD_LOGGING_ONLY
 images:
